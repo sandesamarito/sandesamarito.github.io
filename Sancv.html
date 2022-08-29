@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" 
+          content="width=device-width, 
+                   initial-scale=1.0">
+        <title>SANDEARITO</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        body {
+        margin:0px;
+        padding: 56px;
+        background-color: black;
+        color: aliceblue;}
+        
+        ul {
+            list-style-type: none;
+            margin: 0;
+            text-align: center;
+            overflow: hidden;
+            background-color: rgb(0, 0, 0);
+            width: 100%;
+            font-size: larger;
+        }
+        
+        li {
+            float: left;
+        }
+        
+        li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 20px 24px;
+            text-decoration: none;
+        }
+        
+        li a:hover {
+            background-color: rgb(192, 1, 65);
+        }
+        .button {
+            background-color: #000000;
+            border: none;
+            color: #FFFFFF;
+            text-align: center;
+            font-size: 20px;
+            width: 200px;
+            transition: all 0.5s;
+            cursor: pointer;
+            margin: 5px;
+            align-items: hori;
+        }
+
+        .button span {
+            cursor: pointer;
+            display: inline-block;
+            position: relative;
+            transition: 0.5s;
+        }
+
+        .button span:after {
+            content: '»';
+            position: absolute;
+            opacity: 0;
+            top: 0;
+            right: -20px;
+            transition: 0.5s;
+        }
+
+        .button:hover span {
+            padding-right: 25px;
+        }
+
+        .button:hover span:after {
+            opacity: 1;
+            right: 0;
+         }
+        .container{
+            max-width: auto;
+            position: relative;
+        }
+        .slidefade{
+            animation-name: fade;
+            animation-duration: 9000000000000000000s;
+        }
+        @keyframes fade{
+            from{
+                opacity: .7;
+            }
+            to{
+                opacity: .7;
+            }
+        }
+        .Progress{
+            width: 100%;
+            margin-bottom: 20px;
+            background: rgb(74, 194, 194);
+            border-radius: 15px;
+        }
+        .progress1{
+            position: relative;
+            overflow: hidden;
+            width: 100%;
+            font-family: Roboto,'Helvetica Neue', sans-serif;
+            color: aliceblue;
+            border-radius: 15px;
+            text-align: center;
+        }
+        .Progress-bar{
+            display: block;
+            float: left;
+            width: 0%;
+            height: 100%;
+            background: rgb(189, 41, 21);
+
+        }
+        #picaboo{
+            text-align: center;
+            padding-bottom: 90px;
+        }
+        #about{
+            text-align: center;
+        }
+        .fa {
+            padding: 1rem;
+            font-size: 30px;
+            width: 30px;
+            text-align: center;
+            text-decoration: none;
+            margin: 5px 2px;
+            border-radius: 50%;
+        }
+      
+        .fa:hover {
+                opacity: 0.1;
+        }
+      
+      .fa-facebook {
+        color: white;
+      }
+      
+      .fa-twitter {
+        color: rgb(78, 156, 207);
+      }
+      .fa-linkedin{
+        color: rgb(37, 23, 167);
+      }
+      .fa-pinterest{
+        color: whitesmoke;
+      }
+      .fa-github{
+        background-color: black;
+        color: white;
+      }
+      .fa-youtube{
+        color: #FFFFFF;
+      }
+      .fa-instagram{
+        color: rgb(173, 21, 97);
+      }
+      .fa-whatsapp{
+        color: green;
+      }
+        </style>
+</head>
+    <body>
+        
+        <ul>
+          <li><a href="#picaboo">Sande</a></li>
+          <li><a href="#about">Typical</a></li>
+          <li><a href="#skill">Skills</a></li>
+          <li><a href="#language">Languages</a></li>
+          <li><a href="#work">Work Experience</a></li>
+          <li><a href="#education">Education</a></li>
+          <li>
+        </ul>
+        <section id="picaboo">
+            <div>
+                <div class="slidefade">
+                    <img src="sande.png"alt="sande" width="500" height="auto">
+                </div>
+            </div>
+        </section>
+            <!--About me-->
+            <section id="about">
+                    <div>
+                        <i class="fa fa-briefcase"></i>
+                        <p>IT Enthusiast</p>
+                    </div>
+                    <br>
+                    <br>
+                    <div>
+                        <i class="fa fa-map-marker"></i>
+                        <p><span>Narobi, Kenya;</span><br/>
+                        & to the world</p>
+                        </div>
+                    <br/>
+                    <br/>
+                    <div>
+                        <i class="fa fa-envelope-o"></i>
+                        <p>sandesamarito@gmail.com</p>
+                        </div>
+                    <div>
+                        <i class="fa fa-phone"></i>
+                        <p>+254 748 291 553</p>
+                        </div>
+                        <br/>
+            </section>
+            <!--skills-->
+            <section id="skill">
+                <h1 class="skill" style="margin:40px ; color:aqua; font-weight:bold;">Skills</h1>
+                <br/>
+                        <!--1st-->
+                    <h3>Website Development</h3>
+                        <div class="Progress">
+                            <div class="progress1">
+                               <div class="Progress-bar" data-percent="98"
+                            style="width: 98%;">
+                                <span class="Progress-label">98%</span>
+                               </div>
+                            </div>
+                        </div>
+                        <!--2nd-->
+                    <h3>Photography</h3>
+                    <div class="Progress">
+                        <div class="progress1">
+                           <div class="Progress-bar" data-percent="93"
+                        style="width: 93%;">
+                            <span class="Progress-label">93%</span>
+                           </div>
+                        </div>
+                    </div>
+                     <!--3rd-->
+                     <h3>Graphic Design</h3>
+                     <div class="Progress">
+                         <div class="progress1">
+                            <div class="Progress-bar" data-percent="89"
+                         style="width: 89%;">
+                             <span class="Progress-label">89%</span>
+                            </div>
+                         </div>
+                     </div>
+            </section>
+            <br/>
+            <br/> 
+            <section id="language">
+                <!--Languages-->
+                <br/>
+                <h1 class="languages" style="margin:40px ; color:aqua; font-weight:bold;">Languages</h1>
+                <br/>
+                <!--English-->
+                <h3>English</h3>
+                <div class="Progress">
+                    <div class="progress1">
+                       <div class="Progress-bar" data-percent="99"
+                    style="width: 99%;">
+                        <span class="Progress-label">99%</span>
+                       </div>
+                    </div>
+                </div>
+                <!--Swahili-->
+                <h3>Swahili</h3>
+                <div class="Progress">
+                    <div class="progress1">
+                       <div class="Progress-bar" data-percent="95"
+                    style="width: 95%;">
+                        <span class="Progress-label">95%</span>
+                       </div>
+                    </div>
+                </div>
+                <!--German-->
+                <h3>German</h3>
+                <div class="Progress">
+                    <div class="progress1">
+                       <div class="Progress-bar" data-percent="40"
+                    style="width: 40%;">
+                        <span class="Progress-label">40%</span>
+                       </div>
+                    </div>
+                </div>
+                <!--Luo-->
+                <h3>Luo</h3>
+                <div class="Progress">
+                    <div class="progress1">
+                       <div class="Progress-bar" data-percent="90"
+                    style="width: 90%;">
+                        <span class="Progress-label">90%</span>
+                       </div>
+                    </div>
+                </div>
+            </section>  
+            <br/>
+            <br/>       
+            <section id="work">
+                <!--Work exp-->
+                <h1 class="Exp" style="margin:40px ; color:aqua; font-weight:bold;">Work Experience</h1>
+                <br/>
+                <h2 class="fewd" style="margin:40px ; color:rgb(230, 90, 47); font-weight:bold;">Front-End Web Developer</h2>
+                    <p>From 2019 to recent</p>
+                    <br/>
+                <h2 class="grad" style="margin:40px ; color:rgb(230, 90, 47); font-weight:bold;">Graphic Designer</h2>
+                    <p>From 2019 to recent.</p>
+                    <br/>
+                    <h2 class="Photo" style="margin:40px ; color:rgb(230, 90, 47); font-weight:bold;">Photographer</h2>
+                    <p>From 2020 to recent.</p>
+            </section>
+            <br/>
+            <br/>
+            <section id="education">
+                <h1 class="Edu" style="margin:40px ; color:aqua; font-weight:bold;">Education</h1>
+                <br/>
+               <h2 class="w3s" style="color:rgb(230, 47, 71); font-weight:bold;"> W3schools.</h2>
+                <p>Always and Forever.
+                <br/>
+                Web Development. All I need to know
+                in one place.
+                </p>
+                <br/>
+                <br/>
+               <h2  class="cade" style="color:rgb(230, 47, 71); font-weight:bold;"> Codecademy</h2>
+                <p>Always and Forever.
+                <br/>
+                Web Development.
+                </p>
+                <br/>
+               <h2 class="jkuat" style="color:rgb(230, 47, 71); font-weight:bold;"> Jomo Kenyatta University <br/>of Agriculture and Technology</h2>
+                <p>2019 to recent.
+                <br/>
+                <br/>
+               Diploma in Business Information Technology
+                </p>
+            </section>
+            <br/>
+            <br/>
+            <section>
+                <div>
+                    <a href="Samuel Sande Arito CV.pdf"><button class="button">
+                        <span class="dload"style="color:goldenrod; font-weight:bolder;">Download CV </span></button></a>
+                </div>
+            </section>
+            <br/>
+            <br/>
+     
+            <hr>
+            <footer>
+                <section>
+                    <!--social media-->
+                    <p>Find me on social sites.</p>
+                    <div>
+                        <a href="https://Linkedin.com/sande arito/" class="fa fa-linkedin"></a>
+                        <a href="https://twitter.com/@sandearito/" class="fa fa-twitter"></a>
+                        <a href="https://instagram.com/sande arito/" class="fa fa-instagram"></a>
+                        <a href="https://facebook.com sande arito/" class="fa fa-facebook"></a>
+                        <a href="https://Pintrest.com/sandearito" class="fa fa-pinterest"></a>
+                        <a href="https://github.com/sandesamarito/" class="fa fa-github"></a>
+                        <a href="https://youtube.com" class="fa fa-youtube"></a>
+                        <a href="https://wa.me/254748291553?
+                        text=Hello%2C%20I%20am%20Sande%20Samuel%20Arito%3B%20your%20IT%20assistant"class="fa fa-whatsapp"></a>
+                        <br/>
+                        <br/>
+                        &COPY;Copywrite Nov. 2019  <a href="Sancv.html"> Personal Site</a>| Created by <a href="portlead.html">Sande Arito.</a>
+                    </div>
+                </section>
+            </footer>
+    </body>
+</html>
+        
